@@ -248,7 +248,7 @@
       background:rgb(255, 208, 80);
     }
     .main section.page1 h1 {
-      text-align: center;
+      text-align: left;
       padding: 0;
       margin-bottom: 15px;
       font-size: 70px;
@@ -256,10 +256,16 @@
     }
     .main section.page1 h2 {
       color: rgba(0,0,0,0.85);
-      text-align: center;
+      text-align: left;
       /*width: 435px;*/
       line-height: 160%;
     }
+    body.disabled-onepage-scroll .main section.page1 > img {
+      position: relative;
+      width: 40%;
+      left: 40%;
+    }
+    
     .main section .page_container .btns {
       clear: both;
       float: left;
@@ -344,12 +350,6 @@
     body.disabled-onepage-scroll section .page_container h2, body.disabled-onepage-scroll section .page_container .credit, body.disabled-onepage-scroll section .page_container .btns{
       text-align: center;
       width: 100%;
-    }
-    
-    body.disabled-onepage-scroll .main section.page1 > img {
-      position: absolute;
-      width: 40%;
-      left: 40%;
     }
     
     body.disabled-onepage-scroll .main section > img {
