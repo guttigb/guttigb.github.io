@@ -13,219 +13,238 @@ html {
       height: 100%;
     }
 
-body {
-    
+body {    
     padding: 0;
     margin: 0;
     height: 100%;
     -webkit-font-smoothing: antialiased;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
 }
 
-
-
-.main aside.jobb1 {
-    background: url("pikist.jpg");
-    /* https://www.pikist.com/free-photo-xgdih/hu */
-    background-position: center;
+.main aside {
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    text-align: center;
-    font-family: 'Dancing Script', cursive;
-    float: right;
     height: 100%;
-    width: 35%;
     overflow: hidden;
 }
 
-.main aside.bal1 {
+.jobb1 {
+    background: url("pikist.jpg"); /* https://www.pikist.com/free-photo-xgdih/hu */    
+    float: right;
+    width: 35%;
+    color: rgba(163, 27, 27, 0.785);
+}
+body.disabled-onepage-scroll .jobb1
+{
+    height: 40%;
+    width: 100%;
+}
+
+.bal1 {
     background: url("IMG_0015.JPG");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
     width: 65%;
-    height: 100%;
     float: left;
-    overflow: hidden;
+}
+body.disabled-onepage-scroll .bal1 {
+    width: 100%;
+    height: 65%;
+    float: left;
 }
 
-.main aside.bal2 {
-    background-image: linear-gradient(to top,transparent 0%,rgba(50,70,90,0.9) 40%), url("ws_Nice_Rape_Field_Path_Sky_1920x1080.jpg");
-    /* background: linear-gradient(to top,transparent 0,transparent 40%,rgba(0,0,0,.4) 100%); */
-    /* https://wallpaperstock.net/nice-rape-field-path-sky_wallpapers_47500_1920x1080_1.html */
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    font-family: 'Dancing Script', cursive;
+.bal2 {
+    background-image: linear-gradient(to top,transparent 0%,rgba(50,70,90,0.9) 40%), url("ws_Nice_Rape_Field_Path_Sky_1920x1080.jpg"); /* https://wallpaperstock.net/nice-rape-field-path-sky_wallpapers_47500_1920x1080_1.html */
     float: left;
-    height: 100%;
-    max-height: 100%;
-    overflow: hidden;
     width: 35%;
-    z-index: 2;
+    color: rgb(255, 255, 255, 0.8);
+}
+body.disabled-onepage-scroll .bal2
+{
+    height: 40%;
+    width: 100%;
 }
 
-aside.jobb2 {
-    /* background: url("nadas-to-park-hotel-hotel-gallery-1.jpg"); */
-    background: url("https://nadastoparkhotel.hu/application/files/8816/1173/7911/nadas-to-park-hotel-hotel-gallery-1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+.jobb2 {
+    background: url("https://nadastoparkhotel.hu/application/files/8816/1173/7911/nadas-to-park-hotel-hotel-gallery-1.jpg"); /* background: url("nadas-to-park-hotel-hotel-gallery-1.jpg"); */
     width: 65%;
-    height: 100%;
     float: right;
-    overflow: hidden;
+}
+body.disabled-onepage-scroll .jobb2 {
+    height: 60%;
+    width: 100%;
 }
 
-aside.jobb3-1 {
-    background-image: linear-gradient(to top,transparent 0%,transparent 100%);
+.page3-szel {
     width: 20%;
-    height: 100%;
     float: left;
 }
+body.disabled-onepage-scroll .page3-szel {
+    width: 100%;
+    height: 20%;
+}
 
-aside.jobb3-2 {
-    /* background: url("nadas-to-park-hotel-hotel-gallery-1.jpg"); */
+.page3-kozep {
     background-image: linear-gradient(to top,rgba(50,70,90,0.9) 0%,rgba(50,70,90,0.9) 100%);
-    font-family: 'Dancing Script', cursive;
-    text-align: center;
     width: 60%;
-    height: 100%;
-    max-height: 100%;
-    min-height: 150px;
+    color: rgb(255, 255, 255, 0.8);
     float: left;
     border: 1px solid rgba(140, 198, 255, 0.9);
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
 }
-
-aside.jobb3-3 {
-    width: 20%;
-    background-image: linear-gradient(to top,transparent 0%,transparent 100%);
-    height: 100%;
-    float: left;
+body.disabled-onepage-scroll .page3-kozep {
+    width: 100%;
+    height: 60%;
 }
 
-
-
-h1.h1jobb1 {
+.main h1 {
     padding: 0;
+}
+
+.p1h1 {
     margin-top: 5%;
     font-size: 40px;
     font-size: 3vw;    
-    color: rgba(163, 27, 27, 0.985);
+}
+body.disabled-onepage-scroll .p1h1 {
+    font-size: 5vw;    
 }
 
-h2.h1jobb1 {
-    padding: 0;
+.p1h2 {
     margin-top: 10%;
     font-size: 2vw;
-    color: rgba(163, 27, 27, 0.885);
+}
+body.disabled-onepage-scroll .p1h2 {
+    margin-top: -3%;
+    font-size: 4vw;
 }
 
-p.h1jobb1 {
-    padding: 0;    
-    font-size: 30px;
-    font-size: 2vw;   
-     
-    color: rgba(163, 27, 27, 0.785);
+.p1p1 {
+    font-size: 2vw;
+}
+body.disabled-onepage-scroll .p1p1 {
+    margin-top: -2%;
+    font-size: 3vw;
 }
 
-h1.p2h1bal1 {
+.p2h1 {
     position: relative;
     margin-top: 5%;
-    /* margin-top: 50%; */
-    font-size: 40px;
     font-size: 3vw;    
-    color: rgb(255, 255, 255, 0.8);
+}
+body.disabled-onepage-scroll .p2h1 {
+    position: relative;
+    margin-top: 3%;
+    font-size: 5vw;    
 }
 
-h2.p2h2 {
+.p2h2 {
     margin-top: 10%;
     font-size: 2vw;
-    color: rgb(255, 255, 255, 0.8);;
+}
+body.disabled-onepage-scroll .p2h2 {
+    margin-top: -3%;
+    font-size: 2.5vw;
 }
 
-h2.p3 {
-    margin-top: 5%;
+.p2p1 {
+    font-size: 2vw;        
+}
+body.disabled-onepage-scroll .p2p1 {
+    font-size: 3vw;
+    margin-bottom: -3%;
+}
+
+.p2p2 {
     font-size: 1.5vw;
+    margin-top: 5%;
+}
+body.disabled-onepage-scroll .p2p2 {    
+    font-size: 2vw;
+    margin-top: -2%;
+}
+
+.p2br {
+    padding: 0%;
+}
+body.disabled-onepage-scroll .p2br {
+    visibility: hidden;
+}
+
+.terkep {
+    max-width: 50%;
+}
+body.disabled-onepage-scroll .terkep2 {
+    position: absolute;
+    max-height: 10%;
+    max-width: 20%;
+    right: 3%;
+    top: 5%;
+}
+body.disabled-onepage-scroll .terkep {
+    margin-top: 5%;
+    max-width: 30%;
+}
+
+
+.p3h1 {
+    position: relative;
+    margin-top: 5%;
+    font-size: 4vw;    
+}
+body.disabled-onepage-scroll .p3h1 {
+    position: relative;
+    margin-top: 3%;
+    font-size: 5vw;    
+}
+
+.p3h2 {
+    margin-top: 5%;
+    font-size: 2vw;
     color: rgb(255, 255, 255, 0.9);
     letter-spacing: 2px;
 }
 
-p.p2p {    
-    /* font-size: 30px; */ 
-    font-size: 2vw;        
-    color: rgb(255, 255, 255, 0.8);;
+
+a.buttons {
+    display: inline-block;
+    border: 2px solid rgba(140, 198, 255, 0.9);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: rgba(50,70,90,0.5);
+    display: inline-block;
+    font-weight: bold;
+    color: rgb(197, 215, 255);
+    padding: 0.7em;
+    text-decoration: none;
+    line-height: 100%;
 }
 
-p.p2p2 {    
-    /* font-size: 30px; */
-    font-size: 1.5vw;
-    margin-top: -5%;
-    color: rgb(255, 255, 255, 0.8);;
-}
-
-a.btn{
+.utvonal{
     margin-top: 5%;
-    display: inline-block;
-    border: 2px solid rgba(140, 198, 255, 0.9);
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    background: rgba(50,70,90,0.5);
-    display: inline-block;
-    line-height: 100%;
-    padding: 0.7em;
-    text-decoration: none;
-    color: rgb(197, 215, 255);
     line-height: 140%;
-    font-size: 1vw;
-    font-family: 'Dancing Script', cursive;
+    font-size: 1.5vw;
     letter-spacing: 3px;
-    font-weight: bold;
+}
+body.disabled-onepage-scroll .utvonal{
+    margin-top: -5%;
+    font-size: 1.5vw;
+    letter-spacing: 3px;
 }
 
-a.btn2{
-    display: inline-block;
+.visszajelzes{
     margin-top: -1%;
-    border: 2px solid rgba(140, 198, 255, 0.9);
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    background: rgba(50,70,90,0.5);
-    display: inline-block;
-    line-height: 100%;
-    padding: 0.7em;
-    text-decoration: none;
-    color: rgb(197, 215, 255);
-    font-size: 1.2vw;
-    font-family: 'Dancing Script', cursive;
+    font-size: 1.5vw;
     letter-spacing: 10px;
-    font-weight: bold;
 }
 
-a.app{
-    display: inline-block;
+.app{
     margin-top: -20px;
-    border: 2px solid rgba(140, 198, 255, 0.9);
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    background: rgba(50,70,90,0.5);
-    display: inline-block;
-    line-height: 100%;
-    padding: 0.7em;
-    text-decoration: none;
-    color: rgb(197, 215, 255);
-    font-size: 0.5vw;
-    font-family: 'Dancing Script', cursive;
-    text-align: center;
+    font-size: 0.8vw;
 }
-
-
-
 
 .main section.p3 {
     /* https://www.pexels.com/photo/yellow-bokeh-lights-220067/ */
@@ -235,22 +254,6 @@ a.app{
     background-position: center center;
 }
 
-
-div.atmenet {
-    /*
-    
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: absolute; */
-    position: relative;
-    top: 0%; 
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(to top,transparent 0,transparent 40%,rgba(0,0,0,.4) 100%);
-    z-index: 1;
-}
-
 .wrapper {
     height: 100% !important;
     height: 100%;
@@ -258,7 +261,7 @@ div.atmenet {
     overflow: hidden;
 }
 
-body.disabled-onepage-scroll .onepage-wrapper  section {
+body.disabled-onepage-scroll .onepage-wrapper section {
     min-height: 100%;
     min-width: 100%;
     height: auto;
@@ -267,60 +270,13 @@ body.disabled-onepage-scroll .onepage-wrapper  section {
       box-sizing: border-box;
 }
 
-body.disabled-onepage-scroll .main aside.bal1 {
-    width: 100%;
-    height: 65%;
-    float: left;
-    overflow: hidden;
-}
-
-body.disabled-onepage-scroll .main aside.jobb1
-{
-    float: right;
-    height: 35%;
-    width: 100%;
-    overflow: hidden;
-}
-
-body.disabled-onepage-scroll .main aside.bal2
-{
-    height: 35%;
-    width: 100%;
-    height: auto;
-    float: left;
-}
-
-body.disabled-onepage-scroll .main aside.jobb2 {
-    width: 100%;
-    height: 65%;
-    float: right;
-    overflow: hidden;
-}
-
-body.disabled-onepage-scroll aside.jobb3-1, aside.jobb3-3 {
-    width: 100%;
-    height: 20%;
-}
-
-body.disabled-onepage-scroll aside.jobb3-2 {
-    width: 100%;
-    height: 60%;
-}
-
-
 .main section .page_container {
     position: relative;
     margin: 0 auto 0;
     height: 100%;
-    /*max-width: 950px; */
 }
 
 body.disabled-onepage-scroll .main section .page_container {
-      /*padding: 20px;
-      margin-top: 150px;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;*/
       position: absolute;
       top:0;
       left: 0;
@@ -383,10 +339,10 @@ body.disabled-onepage-scroll .onepage-wrapper  section {
             <section id="page1">
                 <div class="page_container">
                     <aside class="jobb1">
-                        <h1 class="h1jobb1">Noémi és Gábor esküvõje</h1>
-                        <h2 class="h1jobb1">2022. Július 9.</h2>
-                        <p class="h1jobb1" id="demo">(-Nap -Óra -perc -mp)</p>
-                        <p class="h1jobb1">Részletekért görgess lefele</p>
+                        <h1 class="p1h1">Noémi és Gábor esküvõje</h1>
+                        <h2 class="p1h2">2022. Július 9.</h2>
+                        <p class="p1p1" id="demo">(-Nap -Óra -perc -mp)</p>
+                        <p class="p1p1">Részletekért görgess lefele</p>
                     </aside>
 
                     <aside class="bal1">
@@ -397,46 +353,43 @@ body.disabled-onepage-scroll .onepage-wrapper  section {
             <section id="page2">
                 <div class="page_container">
                     <aside class="bal2">
-                            <h1 class="p2h1bal1">Hol is leszünk?</h1>
+                            <h1 class="p2h1">Hol is leszünk?</h1>
                             <h2 class="p2h2">Nádas Pihenőpark</h2>
                             <p class="p2p2">Panoráma terem</p>
-                            <p class="p2p">2211 Vasad, Monori út 100.</p>
-                            <img src="https://nadaspihenopark.hu/application/themes/nadas/images/footer-map.png" 
-                                style="max-width: 70%; max-height: 70%;"
-                                alt="nadaslokacio"><br>
-                            <a class="btn" 
+                            <p class="p2p1">2211 Vasad, Monori út 100.</p>
+                            <img class="terkep" src="https://nadaspihenopark.hu/application/themes/nadas/images/footer-map.png" 
+                                alt="nadaslokacio"><br class="p2br">
+                            <a class="buttons utvonal" 
                                 href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Vasad,+Nádas+Pihenőpark+es+Fogadó,+Monori+út" 
                                 target="_blank">Útvonaltervezés</a>
                     </aside>
                         
-                    <aside class="jobb2">
-                        <!-- <div class="atmenet"></div> -->
-                    </aside>
+                    <aside class="jobb2"></aside>
                 </div>
 
             </section>
 
             <section class="p3" id="page3">
                 <div class="page_container">
-                    <aside class="jobb3-1"></aside>
+                    <aside class="page3-szel"></aside>
 
-                    <aside class="jobb3-2">
-                        <h1 class="p2h1bal1">Egyéb információk</h1>
+                    <aside class="page3-kozep">
+                        <h1 class="p3h1">Egyéb információk</h1>
 <!--                        <h2 class="p3">Szállás: Budapest és vonzáskörzetén kívüliek számára tudunk biztosítani (önköltség)</h2> -->
-                        <h2 class="p3">Menetrend:<br>16:00 Vendégvárás<br>16:45 Szertartás<br>Vacsora, Buli, Torta, Menyecsketánc</h2>
-                        <h2 class="p3">Hazajutás: Sofõrszolgálat
-                            <a class="app" href="https://apps.apple.com/hu/app/sof%C5%91rh%C3%ADv%C3%B3-sof%C5%91rszolg%C3%A1lat/id943066717?l=hu"
+                        <h2 class="p3h2">Menetrend:<br>16:00 Vendégvárás<br>16:45 Szertartás<br>Vacsora, Buli, Torta, Menyecsketánc</h2>
+                        <h2 class="p3h2">Hazajutás: Sofõrszolgálat
+                            <a class="buttons app" href="https://apps.apple.com/hu/app/sof%C5%91rh%C3%ADv%C3%B3-sof%C5%91rszolg%C3%A1lat/id943066717?l=hu"
                             target="_blank">iOS</a>
-                            <a class="app" href="https://play.google.com/store/apps/details?id=com.jexyd.soforhivo&hl=hu&gl=US"
+                            <a class="buttons app" href="https://play.google.com/store/apps/details?id=com.jexyd.soforhivo&hl=hu&gl=US"
                             target="_blank">Android</a>
                         </h2>
 
-                        <h2 class="p3">Jelezd részvételed 2022.01.31-ig</h2>
-                        <a class="btn2" 
+                        <h2 class="p3h2">Jelezd részvételed 2022.01.31-ig</h2>
+                        <a class="buttons visszajelzes" 
                                 href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Vasad,+Nádas+Pihenőpark+es+Fogadó,+Monori+út" 
                                 target="_blank">Visszajelzés</a>
                     </aside>
-                    <aside class="jobb3-3"></aside>
+                    <aside class="page3-szel"></aside>
                 </div>
             </section>
         </div>
