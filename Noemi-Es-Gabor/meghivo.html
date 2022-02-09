@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+    <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <title>Noémi és Gábor esküvõje - 2022.07.09.</title>
+    <meta name="title" content="Noémi és Gábor esküvõje" />
+    <meta name="description" content="Noémi és Gábor esküvõje" />
+<style>
+html {
+      height: 100%;
+    }
+
+body {    
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.main aside {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    overflow: hidden;
+}
+
+.jobb1 {
+    background: url("pikist.jpg"); /* https://www.pikist.com/free-photo-xgdih/hu */    
+    float: right;
+    width: 35%;
+    color: rgba(163, 27, 27, 0.785);
+}
+body.disabled-onepage-scroll .jobb1
+{
+    height: 40%;
+    width: 100%;
+}
+
+.bal1 {
+    background: url("IMG_5226.jpg"); /* sivatagban allos */
+    width: 65%;
+    float: left;
+}
+body.disabled-onepage-scroll .bal1 {
+    width: 100%;
+    height: 65%;
+    float: left;
+}
+
+.bal2 {
+    background-image: linear-gradient(to top,transparent 0%,rgba(50,70,90,0.9) 40%), url("ws_Nice_Rape_Field_Path_Sky_1920x1080.jpg"); /* https://wallpaperstock.net/nice-rape-field-path-sky_wallpapers_47500_1920x1080_1.html */
+    float: left;
+    width: 35%;
+    color: rgb(255, 255, 255, 0.8);
+}
+body.disabled-onepage-scroll .bal2
+{
+    height: 40%;
+    width: 100%;
+}
+
+.jobb2 {
+    background: url("https://nadastoparkhotel.hu/application/files/8816/1173/7911/nadas-to-park-hotel-hotel-gallery-1.jpg"); /* background: url("nadas-to-park-hotel-hotel-gallery-1.jpg"); */
+    width: 65%;
+    float: right;
+}
+body.disabled-onepage-scroll .jobb2 {
+    height: 60%;
+    width: 100%;
+}
+
+.page3-szel {
+    width: 20%;
+    float: left;
+}
+body.disabled-onepage-scroll .page3-szel {
+    width: 100%;
+    height: 20%;
+}
+
+.page3-kozep {
+    background-image: linear-gradient(to top,rgba(50,70,90,0.9) 0%,rgba(50,70,90,0.9) 100%);
+    width: 60%;
+    color: rgb(255, 255, 255, 0.8);
+    float: left;
+    border: 1px solid rgba(140, 198, 255, 0.9);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+body.disabled-onepage-scroll .page3-kozep {
+    width: 100%;
+    height: 60%;
+}
+
+.main h1 {
+    padding: 0;
+}
+
+.p1h1 {
+    margin-top: 5%;
+    font-size: 2.5vw;  
+}
+body.disabled-onepage-scroll .p1h1 {
+    font-size: 5vw;    
+}
+
+.p1h2 {
+    margin-top: 10%;
+    font-size: 1.5vw;
+}
+body.disabled-onepage-scroll .p1h2 {
+    margin-top: -3%;
+    font-size: 4vw;
+}
+
+.p1p1 {
+    font-size: 1.5vw;
+}
+body.disabled-onepage-scroll .p1p1 {
+    margin-top: -2%;
+    font-size: 3vw;
+}
+
+.p2h1 {
+    position: relative;
+    margin-top: 5%;
+    font-size: 4vw;    
+}
+body.disabled-onepage-scroll .p2h1 {
+    position: relative;
+    margin-top: 3%;
+    font-size: 7vw;    
+}
+
+.p2h2 {
+    margin-top: 10%;
+    font-size: 2vw;
+}
+body.disabled-onepage-scroll .p2h2 {
+    margin-top: -3%;
+    font-size: 4vw;
+}
+
+.p2p1 {
+    font-size: 2vw;        
+}
+body.disabled-onepage-scroll .p2p1 {
+    font-size: 5vw;
+    margin-bottom: -3%;
+}
+
+.p2p2 {
+    font-size: 1.5vw;
+    margin-top: 5%;
+}
+body.disabled-onepage-scroll .p2p2 {    
+    font-size: 3vw;
+    margin-top: -2%;
+}
+
+.p2br {
+    padding: 0%;
+}
+body.disabled-onepage-scroll .p2br {
+    visibility: hidden;
+}
+
+.terkep {
+    max-width: 50%;
+}
+body.disabled-onepage-scroll .terkep {
+    position: absolute;
+    max-height: 8%;
+    max-width: 10%;
+    right: 2%;
+    top: 5%;
+}
+body.disabled-onepage-scroll .terkep {
+    margin-top: 5%;
+    max-width: 30%;
+}
+
+.p3h1 {
+    position: relative;
+    margin-top: 5%;
+    font-size: 4.5vw;    
+}
+body.disabled-onepage-scroll .p3h1 {
+    position: relative;
+    margin-top: 3%;
+    font-size: 7vw;
+}
+
+.p3h2 {
+    margin-top: 5%;
+    font-size: 1.5vw;
+    color: rgb(255, 255, 255, 0.9);
+}
+body.disabled-onepage-scroll .p3h2 {
+    margin-top: 4%;
+    font-size: 3.5vw;
+    color: rgb(255, 255, 255, 0.9);
+}
+
+a.buttons {
+    display: inline-block;
+    border: 2px solid rgba(140, 198, 255, 0.9);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: rgba(50,70,90,0.5);
+    display: inline-block;
+    font-weight: bold;
+    color: rgb(197, 215, 255);
+    padding: 0.7em;
+    text-decoration: none;
+    line-height: 100%;
+}
+
+.utvonal{
+    margin-top: 5%;
+    line-height: 140%;
+    font-size: 1.5vw;
+    letter-spacing: 3px;
+}
+body.disabled-onepage-scroll .utvonal{
+    margin-top: 1%;
+    font-size: 2vw;
+    letter-spacing: 3px;
+}
+
+.visszajelzes{
+    margin-top: -1%;
+    font-size: 1.5vw;
+    letter-spacing: 10px;
+}
+body.disabled-onepage-scroll .visszajelzes{
+    font-size: 4vw;
+    letter-spacing: 10px;
+    padding: 0.3em;
+    line-height: 80%;
+}
+
+.app{
+    margin-top: -20px;
+    font-size: 0.8vw;
+}
+body.disabled-onepage-scroll .app{
+    font-size: 1.8vw;
+}
+
+
+.main section.p3 {
+    /* https://www.pexels.com/photo/yellow-bokeh-lights-220067/ */
+    background: url("pexels-pixabay-220067.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.wrapper {
+    height: 100% !important;
+    height: 100%;
+    margin: 0 auto; 
+    overflow: hidden;
+}
+
+body.disabled-onepage-scroll .onepage-wrapper section {
+    min-height: 100%;
+    min-width: 100%;
+    height: auto;
+    -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+}
+
+.main section .page_container {
+    position: relative;
+    margin: 0 auto 0;
+    height: 100%;
+}
+
+body.disabled-onepage-scroll .main section .page_container {
+      position: absolute;
+      top:0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+body.disabled-onepage-scroll .onepage-wrapper  section {
+      min-height: 100%;
+      height: auto;
+    }
+
+</style>
+</head>
+
+
+<script>
+    $(document).ready(function(){
+        $(".main").onepage_scroll({
+            sectionContainer: "section",
+            responsiveFallback: 600,
+            loop: true
+        });
+    });
+    
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jul 9, 2022 16:00:00 GMT+0100 (CEST)").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = "(" + days + " nap " + hours + " óra "
+        + minutes + " perc " + seconds + " mp)";
+
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+
+</script>
+
+
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <section id="page1">
+                <div class="page_container">
+                    <aside class="jobb1">
+                        <h1 class="p1h1">Noémi és Gábor esküvõje</h1>
+                        <h2 class="p1h2">2022. Július 9.</h2>
+                        <p class="p1p1" id="demo">(- nap - óra - perc - mp)</p>
+                        <p class="p1p1">Részletekért görgess lefele</p>
+                    </aside>
+
+                    <aside class="bal1">
+                    </aside>
+                </div>
+            </section>
+
+            <section id="page2">
+                <div class="page_container">
+                    <aside class="bal2">
+                            <h1 class="p2h1">Hol is leszünk?</h1>
+                            <h2 class="p2h2">Nádas Pihenőpark</h2>
+                            <p class="p2p2">Panoráma terem</p>
+                            <p class="p2p1">2211 Vasad, Monori út 100.</p>
+                            <img class="terkep" src="https://nadaspihenopark.hu/application/themes/nadas/images/footer-map.png" 
+                                alt="nadaslokacio"><br class="p2br">
+                            <a class="buttons utvonal" 
+                                href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=Vasad,+Nádas+Pihenőpark+es+Fogadó,+Monori+út" 
+                                target="_blank">Útvonaltervezés</a>
+                    </aside>
+                        
+                    <aside class="jobb2"></aside>
+                </div>
+
+            </section>
+
+            <section class="p3" id="page3">
+                <div class="page_container">
+                    <aside class="page3-szel"></aside>
+
+                    <aside class="page3-kozep">
+                        <h1 class="p3h1">Egyéb információk</h1>
+                        <h2 class="p3h2">Menetrend:<br>16:00 Vendégvárás<br>16:45 Szertartás<br>Vacsora, Buli, Torta, Menyecsketánc</h2>
+                        <h2 class="p3h2">Hazajutás: Sofõrszolgálat
+                            <a class="buttons app" href="https://apps.apple.com/hu/app/sof%C5%91rh%C3%ADv%C3%B3-sof%C5%91rszolg%C3%A1lat/id943066717?l=hu"
+                            target="_blank">iOS</a>
+                            <a class="buttons app" href="https://play.google.com/store/apps/details?id=com.jexyd.soforhivo&hl=hu&gl=US"
+                            target="_blank">Android</a>
+                        </h2>
+                        <h2 class="p3h2">Taxi:
+                            <a class="buttons app" href="https://viragtaxi.hu/" target="_blank">Virag</a>
+                            <a class="buttons app" href="http://bali-taxi.hu/" target="_blank">BA-LI</a>
+                            <a class="buttons app" href="https://taximonor.hu/" target="_blank">Neo</a>
+                        </h2>    
+                        
+                        <h2 class="p3h2">Jelezd részvételed minél elõbb :)</h2>
+                        <a class="buttons visszajelzes" 
+                                href="https://forms.gle/fq99msSk12PHijmx5" 
+                                target="_blank">Visszajelzés</a>
+                    </aside>
+                    <aside class="page3-szel"></aside>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>
+
